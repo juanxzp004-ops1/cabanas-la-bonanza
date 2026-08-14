@@ -1,0 +1,1090 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fafcfa;
+}
+
+/* ---------- ENCABEZADO ---------- */
+
+header {
+    background-color: #418538;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ---------- TÍTULO ---------- */
+
+h1 {
+    color: white;
+    font-size: 38px;
+}
+
+/* ---------- SUBTÍTULO ---------- */
+
+header p {
+    color: white;
+    font-size: 18px;
+}
+
+/* ---------- MENÚ ---------- */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* ---------- SECCIONES ---------- */
+
+h2 {
+    color: #111312;
+    font-size: 28px;
+}
+
+p {
+    color: #111312;
+    font-size: 18px;
+}
+
+/* ===== SECCIÓN INICIO ===== */
+
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#inicio button {
+    background-color: #06e42b;
+    color: white;
+    font-size: 18px;
+    padding: 15px 31px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#inicio button:hover {
+    background-color: #2d6128;
+}
+
+#inicio img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#inicio img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== SECCIÓN NOSOTROS ===== */
+
+#nosotros {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 80px 40px;
+
+}
+
+.nosotros-imagen {
+
+    flex: 1;
+
+}
+
+.nosotros-imagen img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+}
+
+.nosotros-texto {
+
+    flex: 1;
+
+}
+
+.nosotros-texto h2 {
+
+    color: #418538;
+
+    font-size: 36px;
+
+}
+
+.nosotros-texto p {
+
+    font-size: 18px;
+
+    line-height: 30px;
+
+}
+
+/* ===== GALERÍA ===== */
+
+#galeria {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#galeria h2 {
+    color: #418538;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== RESERVAS ===== */
+
+#reservas {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#reservas h2 {
+    color: #418538;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#reservas form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+#reservas input,
+#reservas textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#reservas button {
+    background: #418538;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#reservas button:hover {
+    background: #2f6628;
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.whatsapp:hover{
+    background-color: #1da851;
+    transform: scale(1.1);
+}
+/* ===== FOOTER ===== */
+
+footer{
+    background-color:#262716;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:80px;
+}
+
+footer h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+footer p{
+    color:white;
+    margin:10px 0;
+}
+/* ===== SECCIÓN DE CONTACTO ===== */
+
+.redes{
+    margin-top:25px;
+}
+
+.redes a{
+    display:inline-block;
+    margin:10px;
+    padding:10px 18px;
+    background:white;
+    color:#418538;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.redes a:hover{
+    background:#87ec9d;
+    transform:translateY(-3px);
+}
+/* ===== LOGO ===== */
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 180px;
+    max-width: 100%;
+}
+
+
+/* ===== BANNER ===== */
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.banner-texto h2 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-texto p {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.boton-banner {
+    display: inline-block;
+    background-color: #418538;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-banner:hover {
+    background-color: #2d6128;
+    transform: scale(1.05);
+}
+
+
+/* ===== SERVICIOS ===== */
+
+#servicios {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#servicios h2 {
+    color: #418538;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta h3 {
+    color: #418538;
+    font-size: 24px;
+}
+
+.tarjeta p {
+    line-height: 28px;
+}
+
+
+/* ===== CONTACTO ===== */
+
+#contacto {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #418538;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#contacto p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+/* ===== REDES SOCIALES ===== */
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 35px auto 20px;
+    padding: 0 20px;
+}
+
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-width: 120px;
+    padding: 14px 20px;
+
+    background: #ffffff;
+    color: #418538;
+
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+.redes a i {
+    font-size: 20px;
+}
+
+.redes a:hover {
+    background: #418538;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+
+    .redes {
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .redes a {
+        min-width: 105px;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    .redes a i {
+        font-size: 18px;
+    }
+
+}
+
+/* ===== CELULARES ===== */
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 12px;
+    }
+
+    .banner img {
+        height: 500px;
+    }
+
+    .banner-texto h2 {
+        font-size: 30px;
+    }
+
+    .banner-texto p {
+        font-size: 17px;
+    }
+
+    #nosotros {
+        flex-direction: column;
+    }
+
+    .contenedor-servicios {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta {
+        padding: 25px 20px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ===== VISOR DE GALERÍA ===== */
+
+.visor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.visor img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ===== BOTÓN RESERVAR AHORA ===== */
+
+.boton-reservar {
+    display: inline-block;
+    background-color: #418538;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 31px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-reservar:hover {
+    background-color: #2d6128;
+    transform: scale(1.05);
+}
+/* =================================
+   DISEÑO PARA CELULARES
+   ================================= */
+
+@media (max-width: 768px) {
+
+    /* ENCABEZADO */
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    /* MENÚ */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    /* INICIO */
+    #inicio {
+        padding: 50px 15px;
+    }
+
+    #inicio h2 {
+        font-size: 28px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #inicio img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NOSOTROS */
+    #nosotros {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .nosotros-imagen,
+    .nosotros-texto {
+        width: 100%;
+    }
+
+    .nosotros-texto h2 {
+        font-size: 30px;
+    }
+
+    /* GALERÍA */
+    #galeria {
+        padding: 50px 15px;
+    }
+
+    #galeria h2 {
+        font-size: 30px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .galeria img {
+        width: 100%;
+    }
+
+    /* RESERVAS */
+    #reservas {
+        padding: 50px 20px;
+    }
+
+    #reservas h2 {
+        font-size: 30px;
+    }
+
+    #reservas form {
+        width: 100%;
+    }
+
+    #reservas input,
+    #reservas textarea {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    /* CONTACTO */
+    #contacto {
+        padding: 40px 20px;
+    }
+
+    #contacto iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* REDES SOCIALES */
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes a {
+        width: 80%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+        bottom: 15px;
+        right: 15px;
+        font-size: 15px;
+        padding: 12px 16px;
+    }
+}
+/* ===== TARJETAS DE SERVICIOS ===== */
+
+#servicios {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#servicios h2 {
+    color: #418538;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.20);
+}
+
+.tarjeta h3 {
+    color: #418538;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+/* ===== SERVICIOS EN CELULAR ===== */
+
+@media screen and (max-width: 768px) {
+
+    #servicios .contenedor-servicios {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    #servicios .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+/* ===== VISTA CELULAR ===== */
+
+@media (max-width: 768px) {
+
+    .contenedor-servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 20px;
+    }
+
+}
+/* ===== CORRECCIÓN TARJETAS EN CELULAR ===== */
+
+@media screen and (max-width: 768px) {
+
+    section#servicios .contenedor-servicios {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 90% !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
+    }
+
+    section#servicios .tarjeta {
+        display: block !important;
+        width: 100% !important;
+        max-width: 350px !important;
+        box-sizing: border-box !important;
+        margin: 0 auto !important;
+    }
+
+}
+/* ===== AJUSTE PARA CELULARES ===== */
+
+@media (max-width: 768px) {
+
+    #servicios {
+        padding: 50px 15px;
+    }
+
+    #servicios h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-servicios {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 20px;
+    }
+
+}
+/* ===== SERVICIOS EN CELULAR ===== */
+
+@media (max-width: 768px) {
+
+    .contenedor-servicios {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+        max-width: 350px !important;
+        margin: 0 auto !important;
+    }
+
+    .tarjeta {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+    }
+
+}
+/* ===== FORMULARIO DE RESERVAS - DISEÑO ===== */
+
+#reservas {
+    background-color: #f4f8f3;
+    padding: 80px 20px;
+}
+
+#reservas form {
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+#reservas label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+#reservas input,
+#reservas textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 16px;
+    outline: none;
+}
+
+#reservas input:focus,
+#reservas textarea:focus {
+    border-color: #418538;
+    box-shadow: 0 0 5px rgba(65, 133, 56, 0.3);
+}
+
+#reservas button {
+    display: block;
+    width: 100%;
+    background-color: #418538;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reservas button:hover {
+    background-color: #2f6628;
+    transform: translateY(-2px);
+}
+/* ===== CONTACTO - DISEÑO ===== */
+
+#contacto {
+    background-color: #f4f8f3;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #418538;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#contacto h1 {
+    color: #418538;
+    font-size: 30px;
+}
+
+#contacto p {
+    color: #333;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#contacto iframe {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 35px auto 0;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+/* ===== REDES SOCIALES - DISEÑO ===== */
+
+.redes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 12px 20px;
+    background-color: white;
+    color: #418538;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.redes a:hover {
+    background-color: #87ec9d;
+    color: #1f5120;
+    transform: translateY(-3px);
+}
+/* ===== REDES SOCIALES - DISEÑO ===== */
+
+.redes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 12px 20px;
+    background-color: white;
+    color: #418538;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.redes a:hover {
+    background-color: #87ec9d;
+    color: #1f5120;
+    transform: translateY(-3px);
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #202615;
+    color: white;
+    text-align: center;
+    padding: 35px 20px 25px;
+}
+
+footer p {
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer .redes {
+    margin: 20px auto 0;
+}
+
+/* ===== WHATSAPP FLOTANTE ===== */
+
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 14px 22px;
+
+    background: #25D366;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+
+    border-radius: 35px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+    z-index: 1000;
+
+    transition: all 0.3s ease;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
+    transform: translateY(-4px);
+}
+
+/* ===== WHATSAPP EN CELULAR ===== */
+
+@media (max-width: 768px) {
+
+    .whatsapp {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 17px;
+        font-size: 15px;
+    }
+
+}

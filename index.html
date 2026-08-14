@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>!Cabañas La Bonanza!</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header>
+
+        <h1>CABAÑAS LA BONANZA</h1>
+
+        <p>Un lugar rodeado de naturaleza para descansar y disfrutar.</p>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main>
+
+        <section id="inicio">
+            <img src="imagenes/portada.jpg.jpeg" alt="cabaña la bonanza">
+
+            <h2>Bienvenidos a cabañas la bonanza</h2>
+
+            <p>
+                Disfruta de un lugar rodeado de naturaleza, ideal para descansar,
+                compartir con tu familia y vivir momentos inolvidables.
+            </p>
+
+            <a href="#reservas" class="boton-reservar">Reservar Ahora</a>
+        </section>
+
+        <section id="nosotros">
+
+            <div class="nosotros-imagen">
+                <img src="imagenes/photo.jpeg" alt="Cabañas La Bonanza">
+
+            </div>
+
+
+            <div class="nosotros-texto">
+
+                <h2>¿Quiénes Somos?</h2>
+
+                <p>
+                    Cabañas La Bonanza es un lugar pensado para quienes buscan
+                    tranquilidad, naturaleza y momentos inolvidables.
+                </p>
+
+                <p>
+                    Contamos con cómodas cabañas, piscinas, zonas verdes,
+                    senderos y espacios ideales para compartir en familia.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="galeria">
+
+            <h2>Nuestra Galería</h2>
+
+            <div class="galeria">
+
+                <img src="imagenes/eventos.jpeg" alt="salon de eventos">
+
+                <img src="imagenes/habitacion.jpeg" alt="habitacion luxury">
+
+                <img src="imagenes/portada.jpg.jpeg" alt="salon social">
+
+                <img src="imagenes/pi.jpeg" alt="Foto 4">
+
+                <img src="imagenes/portada.jpg.jpeg" alt="Foto 5">
+
+                <img src="imagenes/portada.jpg.jpeg" alt="Foto 6">
+
+            </div>
+
+        </section>
+
+        <section id="servicios">
+
+            <h2>Nuestros Servicios</h2>
+
+            <div class="contenedor-servicios">
+
+                <div class="tarjeta">
+                    <h3>🏡 Cabañas</h3>
+
+                    <p>
+                        Cabañas cómodas para descansar en familia y amigos.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🏊 Piscina</h3>
+
+                    <p>
+                        Piscinas para adultos y niños.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🍽 Restaurante</h3>
+
+                    <p>
+                        Disfruta de nuestra mejor gastronomía de la región.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="reservas">
+
+            <h2>Reserva tu estadía</h2>
+
+            <form>
+
+                <label for="nombre">Nombre completo</label><br>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre"><br><br>
+
+                <label for="telefono">Teléfono</label><br>
+                <input type="tel" id="telefono" placeholder="3001234567"><br><br>
+
+                <label for="correo">Correo electrónico</label><br>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com"><br><br>
+
+                <label for="fecha">Fecha de llegada</label><br>
+                  <input type="date" id="fecha" required><br><br>
+
+                <label for="salida">Fecha de salida</label><br>
+                <input type="date" id="salida" required><br><br>
+
+                <label for="personas">Número de personas</label><br>
+                <input type="number" id="personas" min="1" placeholder="Ejemplo: 4"><br><br>
+
+                <label for="mensaje">Mensaje</label><br>
+
+                <textarea id="mensaje" rows="5"
+                    placeholder="Cuéntanos cuántas personas vienen o cualquier detalle importante"></textarea><br><br>
+
+                <button type="submit">Enviar Reserva</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer>
+
+        <section id="contacto">
+
+
+
+        <h2>Contáctanos</h2>
+
+        <h1>¡Cabañas La Bonanza!</h1>
+
+        <p>
+            <strong>📍 Dirección:</strong> Vereda La Bonanza
+        </p>
+
+        <p>
+            <strong>📞 Teléfono:</strong> 323 392 5309
+        </p>
+
+        <p>
+            <strong>📧 Correo:</strong> pendiente@cabanaslabonanza.com
+        </p>
+       
+
+        <p>
+            <strong>🕒 Horario:</strong> Todos los días de 8:00 a.m. a 8:00 p.m.
+        </p>
+
+     <iframe
+    src="https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1s11.131122,-74.2093158"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+    </iframe>
+    
+ </section>
+
+
+        <p>© 2026 Cabañas La Bonanza - Todos los derechos reservados.</p>
+
+        <div class="redes">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+
+            <a href="mailto:pendiente@cabanaslabonanza.com">
+                <i class="fa-solid fa-envelope"></i> Correo
+            </a>
+
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573233925309?text=Hola,%20quiero%20información%20sobre%20las%20Cabañas%20La%20Bonanza."
+        class="whatsapp" target="_blank">
+
+        💬 WhatsApp
+
+    </a>
+    <script src="js/script.js"></script>
+
+     </body>
+
+     </html>
