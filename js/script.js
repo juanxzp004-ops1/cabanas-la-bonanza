@@ -8,34 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
         imagen.addEventListener("click", function () {
 
-            // Crear visor
             const visor = document.createElement("div");
             visor.className = "visor";
 
-            // Contenido del visor
             visor.innerHTML = `
                 <button class="cerrar">✕</button>
                 <img src="${imagen.src}" alt="${imagen.alt}">
             `;
 
-            // Mostrar visor
             document.body.appendChild(visor);
 
-            // Cerrar al hacer clic en X
             const botonCerrar = visor.querySelector(".cerrar");
 
             botonCerrar.addEventListener("click", function () {
                 visor.remove();
             });
 
-            // Cerrar al hacer clic fuera de la imagen
             visor.addEventListener("click", function (evento) {
                 if (evento.target === visor) {
                     visor.remove();
                 }
             });
 
-            // Cerrar con la tecla ESC
             document.addEventListener("keydown", cerrarConEscape);
 
             function cerrarConEscape(evento) {
@@ -49,10 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-
 });
-/* ===== VISOR DE GALERÍA (injected CSS) ===== */
+
+
+// ===== ESTILOS DEL VISOR =====
+
 (function injectVisorStyles() {
+
     const css = `
     .visor {
         position: fixed;
@@ -98,38 +95,144 @@ document.addEventListener("DOMContentLoaded", function () {
         color: white;
     }
     `;
-    const style = document.createElement('style');
-    style.type = 'text/css';
+
+    const style = document.createElement("style");
+
+    style.type = "text/css";
+
     style.appendChild(document.createTextNode(css));
+
     document.head.appendChild(style);
+
 })();
+
+
 // ===== FORMULARIO DE RESERVAS =====
 
 const formulario = document.querySelector("#reservas form");
 
 const fechaLlegada = document.querySelector("#fecha");
- const fechaSalida = document.querySelector("#salida");
+const fechaSalida = document.querySelector("#salida");
 
- fechaLlegada.addEventListener("change", function () {
 
-    fechaSalida.min = fechaLlegada.value;
-});
+// Evitar que la fecha de salida sea anterior a la llegada
+
+if (fechaLlegada && fechaSalida) {
+
+    fechaLlegada.addEventListener("change", function () {
+
+        fechaSalida.min = fechaLlegada.value;
+
+    });
+
+}
+
+
+// ===== CONFIGURACIÓN GOOGLE SHEETS =====
+
+// IMPORTANTE:
+// Aquí debes pegar la URL de tu aplicación web de Google Apps Script.
+
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxmXA57CktXIwNNcm_YAIKUT-08dwY3WI-ySb3aGrU8XzNJLzPf3EvfauW_cZuyGGXO/exec";
+
+
+// ===== ENVÍO DE RESERVA =====
 
 if (formulario) {
 
-    formulario.addEventListener("submit", function (evento) {
+    formulario.addEventListener("submit", async function (evento) {
 
         evento.preventDefault();
 
-        const nombre = document.querySelector("#nombre").value;
-        const telefono = document.querySelector("#telefono").value;
-        const correo = document.querySelector("#correo").value;
+        // Obtener datos del formulario
+
+        const nombre = document.querySelector("#nombre").value.trim();
+        const telefono = document.querySelector("#telefono").value.trim();
+        const correo = document.querySelector("#correo").value.trim();
         const llegada = document.querySelector("#fecha").value;
         const salida = document.querySelector("#salida").value;
         const personas = document.querySelector("#personas").value;
-        const mensaje = document.querySelector("#mensaje").value;
+        const mensaje = document.querySelector("#mensaje").value.trim();
 
-        const texto = `Hola, quiero realizar una reserva en Cabañas La Bonanza.
+
+        // Comprobar datos obligatorios
+
+        if (!nombre || !telefono || !correo || !llegada || !salida || !personas) {
+
+            alert("Por favor completa todos los campos obligatorios.");
+
+            return;
+
+        }
+
+
+        // Comprobar fechas
+
+        if (salida <= llegada) {
+
+            alert("La fecha de salida debe ser posterior a la fecha de llegada.");
+
+            return;
+
+        }
+
+
+        // Desactivar botón mientras se envía
+
+        const boton = formulario.querySelector("button[type='submit']");
+
+        const textoOriginal = boton.textContent;
+
+        boton.disabled = true;
+
+        boton.textContent = "Enviando reserva...";
+
+
+        // Datos que enviaremos a Google Sheets
+
+        const datos = {
+
+            nombre: nombre,
+
+            telefono: telefono,
+
+            correo: correo,
+
+            llegada: llegada,
+
+            salida: salida,
+
+            personas: personas,
+
+            mensaje: mensaje
+
+        };
+
+
+        try {
+
+            // Enviar a Google Apps Script
+
+            await fetch(GOOGLE_SCRIPT_URL, {
+
+                method: "POST",
+
+                mode: "no-cors",
+
+                headers: {
+
+                    "Content-Type": "text/plain;charset=utf-8"
+
+                },
+
+                body: JSON.stringify(datos)
+
+            });
+
+
+            // Crear mensaje para WhatsApp
+
+            const texto = `Hola, quiero realizar una reserva en Cabañas La Bonanza.
 
 Nombre: ${nombre}
 Teléfono: ${telefono}
@@ -139,10 +242,46 @@ Fecha de salida: ${salida}
 Número de personas: ${personas}
 Mensaje: ${mensaje}`;
 
-        const whatsapp = "https://wa.me/573233925309?text=" + encodeURIComponent(texto);
 
-        window.open(whatsapp, "_blank");
+            const whatsapp = "https://wa.me/573233925309?text=" + encodeURIComponent(texto);
 
-        formulario.reset();
+
+            // Mostrar confirmación
+
+            alert("¡Solicitud de reserva enviada correctamente! Te redirigiremos a WhatsApp.");
+
+
+            // Abrir WhatsApp
+
+            window.location.href = whatsapp;
+
+
+            // Limpiar formulario
+
+            formulario.reset();
+
+            if (fechaSalida) {
+
+                fechaSalida.min = "";
+
+            }
+
+
+        } catch (error) {
+
+            console.error("Error al enviar la reserva:", error);
+
+            alert("No pudimos enviar la reserva. Por favor inténtalo nuevamente o escríbenos por WhatsApp.");
+
+        }
+
+
+        // Restaurar botón
+
+        boton.disabled = false;
+
+        boton.textContent = textoOriginal;
+
     });
+
 }
