@@ -8,22 +8,22 @@ body {
 /* ---------- ENCABEZADO ---------- */
 
 header {
-    background-color: #418538;
+    background-color: #448092;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 /* ---------- TÍTULO ---------- */
 
 h1 {
-    color: white;
-    font-size: 38px;
+    color: rgba(255, 255, 255, 0.966);
+    font-size: 48px;
 }
 
 /* ---------- SUBTÍTULO ---------- */
 
 header p {
-    color: white;
+    color: rgb(255, 252, 252);
     font-size: 18px;
 }
 
@@ -87,12 +87,12 @@ p {
 
 #inicio img {
     width: 100%;
-    max-width: 1200px;
+    max-width: 600px;
     height: auto;
     border-radius: 20px;
     display: block;
     margin: 0 auto 40px auto;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(5, 5, 5, 0.842);
 }
 
 /* ===== SECCIÓN NOSOTROS ===== */
@@ -133,7 +133,7 @@ p {
 
 .nosotros-texto h2 {
 
-    color: #418538;
+    color: #08f000;
 
     font-size: 36px;
 
@@ -141,16 +141,16 @@ p {
 
 .nosotros-texto p {
 
-    font-size: 18px;
+    font-size: 20px;
 
-    line-height: 30px;
+    line-height: 40px;
 
 }
 
 /* ===== GALERÍA ===== */
 
 #galeria {
-    padding: 80px 20px;
+    padding: 100px 50px;
     text-align: center;
 }
 
@@ -236,7 +236,7 @@ html {
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
-    color: white;
+    color: rgb(34, 255, 5);
     text-decoration: none;
     padding: 15px 20px;
     border-radius: 50px;
@@ -371,7 +371,7 @@ footer p{
 }
 
 #servicios h2 {
-    color: #418538;
+    color: #c20a04;
     font-size: 36px;
     margin-bottom: 40px;
 }
@@ -562,7 +562,7 @@ footer p{
 
 .boton-reservar {
     display: inline-block;
-    background-color: #418538;
+    background-color: #001fcf;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -574,7 +574,7 @@ footer p{
 }
 
 .boton-reservar:hover {
-    background-color: #2d6128;
+    background-color: #02e4e4;
     transform: scale(1.05);
 }
 /* =================================
@@ -867,12 +867,12 @@ footer p{
 /* ===== FORMULARIO DE RESERVAS - DISEÑO ===== */
 
 #reservas {
-    background-color: #f4f8f3;
+    background-color: #eff1f1;
     padding: 80px 20px;
 }
 
 #reservas form {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 35px;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
@@ -883,7 +883,7 @@ footer p{
 #reservas label {
     display: block;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     margin-bottom: 6px;
 }
 
@@ -891,7 +891,7 @@ footer p{
 #reservas textarea {
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #effff9;
     border-radius: 10px;
     padding: 13px;
     font-size: 16px;
@@ -900,14 +900,14 @@ footer p{
 
 #reservas input:focus,
 #reservas textarea:focus {
-    border-color: #418538;
-    box-shadow: 0 0 5px rgba(65, 133, 56, 0.3);
+    border-color: #1ca5b880;
+    box-shadow: 0 0 5px rgba(17, 145, 0, 0.3);
 }
 
 #reservas button {
     display: block;
     width: 100%;
-    background-color: #418538;
+    background-color: #4048b3;
     color: white;
     border: none;
     padding: 15px;
@@ -919,13 +919,13 @@ footer p{
 }
 
 #reservas button:hover {
-    background-color: #2f6628;
+    background-color: #28e1e7;
     transform: translateY(-2px);
 }
 /* ===== CONTACTO - DISEÑO ===== */
 
 #contacto {
-    background-color: #f4f8f3;
+    background-color: #ebeeea;
     padding: 80px 20px;
     text-align: center;
 }
@@ -942,7 +942,7 @@ footer p{
 }
 
 #contacto p {
-    color: #333;
+    color: #0a0a0a;
     font-size: 18px;
     margin: 15px 0;
 }
@@ -975,8 +975,8 @@ footer p{
     gap: 8px;
     margin: 0;
     padding: 12px 20px;
-    background-color: white;
-    color: #418538;
+    background-color: rgb(199, 2, 2);
+    color: #a9e409;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
@@ -1025,8 +1025,8 @@ footer p{
 /* ===== FOOTER ===== */
 
 footer {
-    background: #202615;
-    color: white;
+    background: #90a198;
+    color: rgb(204, 22, 22);
     text-align: center;
     padding: 35px 20px 25px;
 }
@@ -1056,7 +1056,7 @@ footer .redes {
     padding: 14px 22px;
 
     background: #25D366;
-    color: white;
+    color: rgb(219, 223, 217);
 
     text-decoration: none;
     font-weight: bold;

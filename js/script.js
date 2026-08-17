@@ -243,7 +243,7 @@ Número de personas: ${personas}
 Mensaje: ${mensaje}`;
 
 
-            const whatsapp = "https://wa.me/573233925309?text=" + encodeURIComponent(texto);
+        const whatsapp = "https://wa.me/+573022671224?text=" + encodeURIComponent(texto);
 
 
             // Mostrar confirmación
